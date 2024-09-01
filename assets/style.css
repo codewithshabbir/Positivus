@@ -310,26 +310,66 @@ body {
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 30px;
     overflow: hidden;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: var(--body-color);
 }
 
 .working-process .accordion-item .accordion-button {
     background-color: var(--body-color);
-
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
-.working-process .accordion-item .accordion-collapse.collapse.show {
+.working-process .accordion-item .accordion-collapse.collapse.show, .working-process .accordion-item .accordion-collapse.collapse.show {
     background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
 }
-.working-process .accordion-item .accordion-collapse.collapse.show ~ .accordion-item {
-    background-color: var(--primary-color); /* Parent element background */
+
+.working-process .accordion-item .accordion-button:not(.collapsed) {
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+    background-color: var(--primary-color) !important;
+    box-shadow: none;
 }
 
 .working-process .accordion-item .accordion-button:focus {
     box-shadow: none;
 }
 
+.working-process .accordion-item .accordion-collapse .accordion-body {
+    padding: 20px 40px;
+}
+
+.working-process .accordion-item .accordian-numbers {
+    font-size: 44px;
+    padding-right: 20px;
+}
+
+.accordion-button::after {
+    background-image: none;
+    font-family: "Font Awesome 6 Free";
+    content: "\f068";
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--body-color);
+    color: var(--secondary-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f067"; 
+}
+
+.working-process .accordion-item .collapsing {
+    transition: all 0.3s ease-in-out;
+  }
+  
 
 /* Contact Us Start */
 
