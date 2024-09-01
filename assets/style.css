@@ -303,6 +303,34 @@ body {
     color: var(--secondary-color);
 }
 
+/* Working Process Start */
+
+.working-process .accordion-item {
+    border: 1px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: var(--body-color);
+}
+
+.working-process .accordion-item .accordion-button {
+    background-color: var(--body-color);
+
+}
+
+.working-process .accordion-item .accordion-collapse.collapse.show {
+    background-color: var(--primary-color);
+}
+.working-process .accordion-item .accordion-collapse.collapse.show ~ .accordion-item {
+    background-color: var(--primary-color); /* Parent element background */
+}
+
+.working-process .accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+
 /* Contact Us Start */
 
 .contact-us  .contact-wrapper{
@@ -326,4 +354,49 @@ body {
     position: absolute;
     right: -190px;
     width: 400px;
+}
+
+
+/* Footer Start */
+
+footer .row {
+    background-color: var(--secondary-color);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+footer .social-icons a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+footer .social-icons a i {
+    /* padding: 20px; */
+}
+
+footer .subscription {
+    padding: 60px 30px;
+    background: rgba(41, 42, 50, 1);
+    border-radius: 25px;
+}
+
+footer .subscription input, footer .subscription input:focus {
+    background-color: transparent;
+    border: 1px solid var(--body-color);
+    box-shadow: none;
+    padding: 10px 20px;
+}
+
+footer .subscription input[type='submit'] {
+    background-color: var(--primary-color);
+}
+
+footer .footer-info {
+    border-bottom: 2px solid var(--body-color);
 }
