@@ -3,7 +3,6 @@ var getHubergerCrossIcon = document.getElementById("hamburger-cross");
 var getMobileMenu = document.getElementById("mobile-menu");
 
 getHubergerIcon.addEventListener("click", function () {
-    console.log("hello");
     getMobileMenu.style.display = "flex";
     setTimeout(function () {
         getMobileMenu.style.transform = "translateX(0%)"; // Slide in the menu
@@ -11,7 +10,6 @@ getHubergerIcon.addEventListener("click", function () {
 });
 
 getHubergerCrossIcon.addEventListener("click", function () {
-    console.log("hello");
     getMobileMenu.style.transform = "translateX(-100%)"; // Slide out the menu
     setTimeout(function () {
         getMobileMenu.style.display = "none";
